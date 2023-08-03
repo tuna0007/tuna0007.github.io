@@ -299,23 +299,69 @@ body {
 
 
 .footer {
-
-
     font-size: 14px;
     font-weight: 500;
     background-color: @dark;
-
     color: @light;
-        
-
     h5 {
-        margin-top: 60px;
-        font-size: 20px;
-        font-weight: 600;
+            margin-top: 60px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    ul {
+        padding: 0;margin: 0;
+    }
+   
+    &-block {
+        &-contacts {
+            h5 {
+                margin-left: 24px;
+            }
+            p:before {
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                width: 15px;
+                height: 16px;
+                background-size: 100%;
+                vertical-align: middle;
+            }
+            .phone p:before{
+                background: url(../images/icons/footer/phone.svg) no-repeat center;
+            }
+            .place p:before{
+                background: url(../images/icons/footer/house.svg) no-repeat center;
+            }
+            .address p:before{
+                background: url(../images/icons/footer/geo.svg) no-repeat center;
+            }
+            .email p:before{
+                background: url(../images/icons/footer/message.svg) no-repeat center;
+            }
+        }
+        &-info {
+            line-height: 180.6%; 
+            a {
+                color: @light;
+                text-decoration: underline;
+            }
+        }
+        &-weather {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            img {
+                transition: 0.3s;
+            }
+            img:hover {
+                opacity: 70%;
+            }
+        }
     }
 
-
     .copyright {
+        margin-top: 60px;
         font-size: 14px;
         font-weight: 500;
         background-color: @copyright;
