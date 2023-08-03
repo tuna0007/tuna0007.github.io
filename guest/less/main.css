@@ -254,7 +254,53 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
+.footer ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-block-contacts h5 {
+  margin-left: 24px;
+}
+.footer-block-contacts p:before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 16px;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.footer-block-contacts .phone p:before {
+  background: url(../images/icons/footer/phone.svg) no-repeat center;
+}
+.footer-block-contacts .place p:before {
+  background: url(../images/icons/footer/house.svg) no-repeat center;
+}
+.footer-block-contacts .address p:before {
+  background: url(../images/icons/footer/geo.svg) no-repeat center;
+}
+.footer-block-contacts .email p:before {
+  background: url(../images/icons/footer/message.svg) no-repeat center;
+}
+.footer-block-info {
+  line-height: 180.6%;
+}
+.footer-block-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-block-weather li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-block-weather img {
+  transition: 0.3s;
+}
+.footer-block-weather img:hover {
+  opacity: 70%;
+}
 .footer .copyright {
+  margin-top: 60px;
   font-size: 14px;
   font-weight: 500;
   background-color: #626262;
