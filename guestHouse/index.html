@@ -311,19 +311,20 @@
             </div>
           </div>
         </div>
-
       </section>
+
+
 
       <section class="feedback">
         <div class="container">
-          <div class="row">
-            <div class="col-xxl-12
-                        col-xl-12
-                        col-lg-12
-                        col-md-12
-                        col-sm-12
-                        col-12">
-
+          <div class="row justify-content-center">
+            <div class="col-xxl-10
+                        col-xl-10
+                        col-lg-10
+                        col-md-10
+                        col-sm-10
+                        col-10">
+            <div class="feedback-block">
               <h3>ОТЗЫВЫ О НАС</h3>
               <div class="feedback-slider">
                 <div class="feedback-slider-item">
@@ -332,31 +333,49 @@
                 </div>
                 <div class="feedback-slider-item">
                   <p>gggВсе было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!</p>
-                  <h5>Вера</h5>
+                  <h5>Андрей</h5>
                 </div>
                 <div class="feedback-slider-item">
                   <p>hhhВсе было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!</p>
-                  <h5>Вера</h5>
+                  <h5>Геннадий</h5>
                 </div>
                 <div class="feedback-slider-item">
                   <p>jjjjВсе было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!</p>
-                  <h5>Вера</h5>
+                  <h5>Мария</h5>
                 </div>
                 <div class="feedback-slider-item">
                   <p>kkkkсе было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!</p>
-                  <h5>Вера</h5>
+                  <h5>Джон</h5>
                 </div>
               </div>
+              
               <div class="feedback-area">
-                <!-- здесь будут слайды -->
-                <button type="button" class="slick-prev">Previous</button>
-                <button type="button" class="slick-next">Next</button>
+                <div class="feedback-area-item">
+                  <p>Вера</p>
+                </div>
+                <div class="feedback-area-item">
+                  <p>Андрей</p>
+                </div>
+                <div class="feedback-area-item">
+                  <p>Геннадий</p>
+                </div>
+                <div class="feedback-area-item">
+                  <p>Мария</p>
+                </div>
+                <div class="feedback-area-item">
+                  <p>Джон</p>
+                </div>
               </div>
+              
+               
+            </div>
+              
+              
 
-            </div> <!-- col -->
-          </div> <!-- row -->
-        </div> <!-- container -->
-      </section>
+            </div>  
+          </div>  
+        </div> 
+      </section> 
     </main>
  
 
@@ -428,12 +447,20 @@
                         col-3">
               <div class="footer-block-weather">
                 <h5>Погода</h5>
-                <div id="ww_d6a7e9c643eb0" v='1.3' loc='id' a='{"t":"responsive","lang":"ru","ids":["wl3331"],"font":"Arial","sl_ics":"one","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"rgba(255,255,255,1)","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3","cl_odd":"#00000000"}'>
-                  
-                  </div>
-                  <script async src="https://app2.weatherwidget.org/js/?id=ww_d6a7e9c643eb0"></script>
-                
-                
+                <div _ngcontent-err-c5="" class="informers-border ng-star-inserted informers-border_theme_minimal" style="width: auto;">
+                  <!----><!----><!----><!---->
+                  <app-informer-minimal _ngcontent-err-c5="" _nghost-err-c17="" class="ng-star-inserted">
+                    <a _ngcontent-err-c17="" target="_blank" class="informer informer_size_x-large" href="https://www.meteoprog.ua/ru/weather/Gagra?_ga=2.217209750.1653505686.1691155522-40923860.1691155522" style="background-color: rgba(88, 88, 88, 0.1); background-image: none; color: rgb(255, 255, 255);">
+                      <span _ngcontent-err-c17="" class="informer__city">Цандрыпш</span>
+                      <span _ngcontent-err-c17="" class="informer__icon">
+                        <span _ngcontent-err-c17="" class="informer__image icon-72x75day-cloud1-osad1-72x75">
+                        </span>
+                      </span>
+                      <span _ngcontent-err-c17="" class="informer__t">  26°</span>
+                    </a>
+                  </app-informer-minimal>
+                  <!----><!----><!----><!---->
+                </div>
                 <p></p>
                 <div class="footer-media">
                   <ul>
@@ -465,22 +492,25 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.feedback-area').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          asNavFor: '.feedback-slider',
-          dots: false,
-          centerMode: true,
-          focusOnSelect: true,
-          
-        });
         $('.feedback-slider').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          
-          arrows: false,
-          fade: true,
           asNavFor: '.feedback-area',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: false,
+          
+        });
+        $('.feedback-area').slick({
+          
+          prevArrow: '<button type="button" class="slick-next"><img src="images/icons/left.png" alt="arrow"></button>',
+          nextArrow: '<button type="button" class="slick-prev"><img src="images/icons/right.png" alt="arrow"></button>',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
+          fade: true,
+          asNavFor: '.feedback-slider',
           autoplay: true,
           autoplaySpeed: 2000
         });
