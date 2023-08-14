@@ -200,7 +200,7 @@ body {
 .header-nav-media img:hover {
   opacity: 80%;
 }
-.header-nav ul {
+.header-nav-media ul {
   padding: 0;
 }
 .header-nav li {
