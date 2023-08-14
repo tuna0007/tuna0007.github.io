@@ -1,0 +1,884 @@
+/* FONTS */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.eot');
+  src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'), url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.eot');
+  src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.eot');
+  src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* Colors */
+/* Basic settings */
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+}
+/* HEADER */
+.header {
+  height: 120px;
+  background-color: #fff;
+}
+.header-contacts {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+.header-contacts-address p:before {
+  content: '';
+  display: inline-block;
+  margin-right: 14px;
+  width: 14px;
+  height: 14px;
+  background: url(../images/icons/house.svg) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.header-contacts-email {
+  text-align: right;
+}
+.header-contacts-email p:before {
+  content: '';
+  display: inline-block;
+  margin-right: 14px;
+  width: 14px;
+  height: 14px;
+  background: url(../images/icons/message.svg) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.header-contacts-phone {
+  text-align: right;
+}
+.header-contacts-phone p:before {
+  content: '';
+  display: inline-block;
+  margin-right: 14px;
+  width: 14px;
+  height: 14px;
+  background: url(../images/icons/phone.svg) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.header-nav {
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.header-nav-logo {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.header-nav-logo a {
+  color: #585858;
+}
+.header-nav-menu {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header-nav-menu .btn-wrap {
+  display: none;
+}
+.header-nav-menu-wrapper {
+  /* Номера и цены дропдаун */
+}
+.header-nav-menu-wrapper a,
+.header-nav-menu-wrapper li {
+  position: relative;
+  margin-top: 18px;
+  margin-right: 16px;
+  color: #1E1E1E;
+  transition: 0.3s;
+}
+.header-nav-menu-wrapper a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  content: "";
+  background-color: #3F8CFF;
+  transition: 0.3s ease-out;
+}
+.header-nav-menu-wrapper a:hover:after,
+.header-nav-menu-wrapper a:focus:after,
+.header-nav-menu-wrapper a:hover {
+  width: 100%;
+  color: #3F8CFF;
+}
+.header-nav-menu-wrapper-drop {
+  position: relative;
+  height: 40px;
+  text-align: center;
+}
+.header-nav-menu-wrapper-drop ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+}
+.header-nav-menu-wrapper-drop-content {
+  position: absolute;
+  width: 100%;
+  right: 7px;
+  z-index: 200;
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  animation: fade-in-from-top 0.3s both;
+}
+.header-nav-menu-wrapper-drop-content li,
+.header-nav-menu-wrapper-drop-content a {
+  margin: 0;
+  padding: 0;
+  padding-top: 9px;
+}
+.header-nav-menu-wrapper-drop-content-item {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: list-item;
+  border-bottom: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.header-nav-menu-wrapper-drop-content-item:hover {
+  background-color: #D9D9D9;
+  cursor: pointer;
+  color: #1E1E1E;
+}
+.header-nav-menu-wrapper-drop-content-item:hover a {
+  color: #1E1E1E;
+}
+.header-nav-menu-wrapper-drop-content-item:hover a:after {
+  display: none;
+}
+.header-nav-menu-wrapper-drop:hover .header-nav-menu-wrapper-drop-content {
+  display: flex;
+  flex-direction: column;
+}
+.header-nav-media {
+  text-align: right;
+}
+.header-nav-media li {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header-nav-media img {
+  transition: 0.3s;
+}
+.header-nav-media img:hover {
+  opacity: 80%;
+}
+.header-nav li {
+  display: inline-block;
+  color: #1E1E1E;
+}
+/* MAIN PAGE */
+.main-page {
+  position: relative;
+  margin-top: 10px;
+  height: 680px;
+  background: #fff url("../images/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+  /* Def datepicker styles off */
+}
+.main-page-form {
+  margin-top: 250px;
+  padding: 20px 80px 40px 80px;
+  background-color: #fff;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
+  /* BUTTON */
+}
+.main-page-form-item {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #585858;
+}
+.main-page-form-item p {
+  margin-bottom: 6px;
+}
+.main-page-form-item input,
+.main-page-form-item .drop {
+  position: relative;
+  padding-left: 10px;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  color: #777777;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main-page-form-item .checkin {
+  position: relative;
+}
+.main-page-form-item .checkin::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icons/calendar.svg) no-repeat center;
+  background-size: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.main-page-form-item .drop input {
+  margin-left: -10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+}
+.main-page-form-item .drop-content {
+  margin-top: 13px;
+  margin-left: -9px;
+  border-radius: 10px;
+  z-index: 120;
+  background: #FAFAFA;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  animation: fade-out 0.3s both;
+}
+.main-page-form-item .drop-content-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main-page-form-item .drop a {
+  width: 100%;
+  color: #585858;
+}
+.main-page-form-item .drop p {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.main-page-form-item .drop::before {
+  content: '';
+  position: absolute;
+  right: 6px;
+  margin: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: url(../images/icons/human.svg) no-repeat center;
+  background-size: 100%;
+  transition: 0.5s;
+}
+.main-page-form-item .drop.active .drop-content {
+  display: block;
+  animation: fade-in 0.3s both;
+}
+.main-page-form-item .drop .drop-content p:hover {
+  background-color: #D9D9D9;
+}
+.main-page-form .check {
+  width: 140px;
+  height: 36px;
+  margin-top: 28px;
+  background-color: #3F8CFF;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px 0px rgba(63, 140, 255, 0.5);
+  transition: 0.3s;
+}
+.main-page-form button:hover {
+  background-color: #3475d6;
+}
+.main-page .wave {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+}
+/* ROOMS BLOCK */
+.rooms {
+  margin-top: 40px;
+}
+.rooms h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #585858;
+}
+.rooms-item {
+  position: relative;
+  margin: 12px;
+  width: 100%;
+  height: 300px;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.rooms #double {
+  background: #fff url('../images/rooms/double.jpg') center center no-repeat;
+  background-size: cover;
+}
+.rooms #family {
+  background: #fff url('../images/rooms/family.jpg') center center no-repeat;
+  background-size: cover;
+}
+.rooms #deluxe {
+  background: #fff url('../images/rooms/deluxe.jpg') center center no-repeat;
+  background-size: cover;
+}
+.rooms #deluxeplus {
+  background: #fff url('../images/rooms/deluxeplus.jpg') center center no-repeat;
+  background-size: cover;
+}
+.rooms .info-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0px 0px 5px #1E1E1E;
+  transition: 0.7s;
+}
+.rooms .info-block h5 {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 24px;
+}
+.rooms .info-block li {
+  font-size: 14px;
+}
+.description {
+  margin: 80px;
+  text-align: justify;
+}
+.description h6 {
+  margin-bottom: 0px;
+  color: #585858;
+}
+.description p {
+  margin-left: 20px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #777777;
+}
+.description img {
+  margin: 0 20px;
+}
+.feedback {
+  margin: 80px;
+}
+.feedback button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 36px;
+  background-color: #fff;
+}
+.feedback .slick-prev {
+  left: 90px;
+}
+.feedback .slick-next {
+  right: 90px;
+}
+.feedback h3 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #585858;
+}
+.feedback-slider {
+  position: relative;
+  border-radius: 10px;
+  background-color: #3F8CFF;
+  box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.5);
+  color: #fff;
+}
+.feedback-slider::after {
+  content: '';
+  position: absolute;
+  background: #3F8CFF;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.3);
+  z-index: -1;
+  /* Прячем за основным блоком */
+  transform: rotate(45deg);
+  /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+}
+.feedback-slider-item {
+  padding: 10px 50px;
+  text-align: center;
+}
+.feedback-slider-item p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.feedback-area {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
+  background: #FFB23F url('../images/icons/human-white.svg') center center no-repeat;
+}
+.feedback-area-item {
+  text-align: center;
+  color: #fff;
+  margin-top: 58px;
+}
+.footer {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #777777;
+  color: #fff;
+}
+.footer h5 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-block-contacts {
+  line-height: 180.6%;
+}
+.footer-block-contacts h5 {
+  margin-left: 24px;
+}
+.footer-block-contacts p {
+  margin-bottom: 6px;
+}
+.footer-block-contacts p:before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 16px;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.footer-block-contacts .phone p:before {
+  background: url(../images/icons/footer/phone.svg) no-repeat center;
+}
+.footer-block-contacts .place p:before {
+  background: url(../images/icons/footer/house.svg) no-repeat center;
+}
+.footer-block-contacts .address p:before {
+  background: url(../images/icons/footer/geo.svg) no-repeat center;
+}
+.footer-block-contacts .email p:before {
+  background: url(../images/icons/footer/message.svg) no-repeat center;
+}
+.footer-block-info {
+  line-height: 180.6%;
+}
+.footer-block-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-block-weather li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-block-weather img {
+  transition: 0.3s;
+}
+.footer-block-weather img:hover {
+  opacity: 70%;
+}
+.footer .copyright {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #626262;
+  color: #fff;
+}
+.footer .copyright p {
+  margin: 20px;
+}
+@keyframes fade-in {
+  0% {
+    margin-top: 18px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 13px;
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    margin-top: 13px;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 18px;
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fade-in-from-top {
+  0% {
+    margin-top: -12px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 11px;
+    opacity: 1;
+  }
+}
+@keyframes fade-from-right {
+  0% {
+    opacity: 0;
+    right: -300px;
+  }
+  100% {
+    opacity: 1;
+    right: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  /* HEADER */
+  .header-nav {
+    margin-top: 20px;
+  }
+  .header-nav ul {
+    padding: 0;
+  }
+  .header-nav-logo {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .header-nav-menu {
+    margin-right: 10px;
+    text-align: left;
+    /* Номера и цены дропдаун */
+  }
+  .header-nav-menu a,
+  .header-nav-menu li {
+    margin-right: 8px;
+  }
+  .header-nav-menu-drop-content {
+    right: 0px;
+  }
+  .header-nav-media li {
+    margin-left: 0px;
+  }
+  .main-page-form {
+    padding: 20px 40px 40px 40px;
+  }
+}
+@media (max-width: 991px) {
+  .header-nav {
+    position: relative;
+  }
+  .header-nav-logo {
+    margin-top: -10px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .header-nav-menu {
+    position: relative;
+  }
+  .header-nav-menu .btn-wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: -10px;
+    padding: 4px;
+    z-index: 30;
+    border-radius: 10px;
+    border: 1px solid #585858;
+    transition: 0.3s;
+  }
+  .header-nav-menu .btn-wrap:hover {
+    background-color: #D9D9D9;
+    cursor: pointer;
+  }
+  .header-nav-menu-wrapper {
+    position: absolute;
+    display: none;
+    top: 65px;
+    left: -358px;
+    width: 100%;
+    z-index: 2;
+    animation: fade-from-right 0.3s both;
+    /* при наведении на номера и цены выпадает список*/
+  }
+  .header-nav-menu-wrapper li {
+    margin: 0;
+    padding: 18px 12px;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    background-color: #fff;
+  }
+  .header-nav-menu-wrapper li:hover {
+    background-color: #D9D9D9;
+  }
+  .header-nav-menu-wrapper-drop {
+    height: 58px;
+  }
+  .header-nav-menu-wrapper-drop-content {
+    width: 101%;
+    right: -1px;
+    top: 46px;
+    display: none;
+    transition: 0.3s;
+    animation: fade-in-from-top 0.3s both;
+  }
+  .header-nav-menu-wrapper-drop-content li,
+  .header-nav-menu-wrapper-drop-content a {
+    margin: 0;
+    padding: 0;
+    padding-top: 9px;
+  }
+  .header-nav-menu-wrapper-drop-content-item {
+    height: 40px;
+  }
+  .header-nav-menu-wrapper-drop:hover .header-nav-menu-wrapper-drop-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-nav-media {
+    display: none;
+  }
+  /* активация по кнопочке */
+  #menuWrap.active {
+    display: flex;
+    flex-direction: row;
+  }
+  /* MAIN */
+  .main-page-form-item {
+    /* BUTTON */
+  }
+  .main-page-form-item p {
+    margin-top: 20px;
+  }
+  .main-page-form-item .check {
+    margin-top: 48px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .header-contacts {
+    display: none;
+  }
+  .header-nav {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .header-nav-logo {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  .header-nav-menu-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    z-index: 40;
+    display: none;
+    box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+  .header-nav-menu-wrapper li {
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .header #menuWrap.active {
+    display: flex;
+    flex-direction: column;
+  }
+  /* MAIN */
+  .main-page-form {
+    padding: 10px 20px 40px 20px;
+  }
+  .main-page-form-item {
+    /* BUTTON */
+  }
+  .main-page-form-item p {
+    margin-top: 20px;
+  }
+  .main-page-form-item .check {
+    margin-top: 48px;
+    width: 100%;
+  }
+  .rooms-item {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 90%;
+  }
+  .rooms .info-block h5 {
+    font-size: 20px;
+  }
+  .rooms .info-block li {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .description h6 {
+    text-align: center;
+  }
+  .description p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .description img {
+    width: 90%;
+    float: unset;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .feedback {
+    margin: 80px;
+  }
+  .feedback-slider {
+    box-shadow: 0px 2px 30px rgba(63, 140, 255, 0.5);
+  }
+  .feedback-slider-item {
+    padding: 30px 10px 10px;
+  }
+  .feedback-slider-item p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .feedback-area {
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+  }
+  /* FOOTER */
+  .footer {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #777777;
+    color: #fff;
+  }
+  .footer h5 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .footer ul {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-block {
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .footer-block-geo {
+    display: none;
+  }
+  .footer-block-weather {
+    display: none;
+  }
+  .footer-block-contacts h5 {
+    margin-left: 0;
+  }
+  .footer-block-contacts .phone p:before {
+    display: none;
+  }
+  .footer-block-contacts .place p:before {
+    display: none;
+  }
+  .footer-block-contacts .address p:before {
+    display: none;
+  }
+  .footer-block-contacts .email p:before {
+    display: none;
+  }
+  .footer .copyright {
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #626262;
+    color: #fff;
+  }
+  .footer .copyright p {
+    margin: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .header-nav {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+  /* MAIN PAGE */
+  .main-page-form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 220px;
+    padding: 10px 60px 40px 60px;
+    border-radius: 10px;
+    /* BUTTON */
+  }
+  .main-page-form-item p {
+    margin-top: 20px;
+  }
+  .main-page-form .check {
+    margin-top: 30px;
+    width: 70%;
+  }
+  .footer-block {
+    text-align: center;
+  }
+}
