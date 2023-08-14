@@ -200,6 +200,9 @@ body {
 .header-nav-media img:hover {
   opacity: 80%;
 }
+.header-nav ul {
+  padding: 0;
+}
 .header-nav li {
   display: inline-block;
   color: #1E1E1E;
