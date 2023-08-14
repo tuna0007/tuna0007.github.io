@@ -869,9 +869,8 @@ body {
             }
         }
         &-area {
-            width: 40px;
-            height: 40px;
-            background-size: 60%;
+            width: 60px;
+            height: 60px;
         }
     }
 
@@ -920,16 +919,6 @@ body {
                 }
             }
         }
-        .copyright {
-            margin-top: 60px;
-            font-size: 14px;
-            font-weight: 500;
-            background-color: @copyright;
-            color: @light;
-            p {
-              margin: 20px;  
-            }
-        }
     }
 }
 
@@ -947,7 +936,7 @@ body {
             width: 100%;
             margin: 0 auto;
             margin-top: 220px;
-            padding: 14px 10px 40px 14px;
+            padding: 14px 30px 40px 30px;
             border-radius: 10px;
             &-item {
                 //text-align: center;
@@ -964,18 +953,25 @@ body {
     }
 
     .rooms {
+        margin-top: 60px;
+        h1 {
+            font-size: 26px;
+        }
         &-item {
             margin-bottom: 20px;
+            width: 100%;
             height: 200px;
         }
         .info-block {
             h5 {
                 margin-top: 4px;
                 text-align: center;
-                font-size: 14px; 
+                font-size: 16px; 
             }
             ul {
-                margin-bottom: 10px;
+                padding: 0;
+                padding-left: 10px;
+                margin-bottom: 6px;
             }
             li {
                 font-size: 10px;
@@ -1027,9 +1023,15 @@ body {
 
 
 
-    .footer-block {
-        text-align: center;
+    .footer {
+        h5 {
+            margin-top: 40px;
+        }
+        &-block {
+            text-align: center;
+        } 
     }
+    
 
 
 }
