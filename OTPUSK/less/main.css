@@ -1,6 +1,6 @@
 body {
-  background: url('../images/video.mp4');
-  background-size: cover;
+  background: url('../images/Video_mob.mp4');
+  background-size: contain;
 }
 .bgvideo {
   position: fixed;
