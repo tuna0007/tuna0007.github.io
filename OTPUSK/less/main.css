@@ -37,11 +37,15 @@ body {
     font-size: 40px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   .timer {
     font-size: 28px;
   }
   #seconds {
     font-size: 50px;
   }
+  body {
+  background: url('../images/Video_mob.mp4');
+  background-size: contain;
+}
 }
