@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width">
+    <!--Required meta-->
+
+
+    <title>Hello ^)</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link href="less/calculator.css" rel="stylesheet">
+
+    <!--JS-->
+    <!--если нужен загрузочный экран и тп, то сюда-->
+    <!-- Bootstrap JS + Popper JS -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- p5 -->
+    <script src="js/p5.js"></script>
+    <script src="js/p5.sound.min.js"></script>   
+
+</head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-content">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xxl-6
+                    col-xl-6 
+                    col-lg-6
+                    col-md-6
+                    col-sm-6
+                    col-6">
+              <!-- Первый блок -->
+            </div>
+
+            <div class="col-xxl-6
+                    col-xl-6 
+                    col-lg-6
+                    col-md-6
+                    col-sm-6
+                    col-6">
+              <!-- Второй блок -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+<a href="index.html">Back</a>
+
+
+
+    <!-- MAIN -->
+    <main>
+      
+        <div class = "interface">
+
+            <div class = "title"><strong>CALCULATOR-3000</strong></div>
+
+              <div class = "display">
+                <span class="outputText"><strong><output id="result"></output></strong></span>             
+              </div>
+
+            <div class="buttons">
+              <div>
+                <button onclick="addSymbol(7)">7</button>
+                <button onclick="addSymbol(8)">8</button>
+                <button onclick="addSymbol(9)">9</button>
+                <button class="operations" onclick="addition()">+</button><br>
+              </div>
+              <div>
+                <button onclick="addSymbol(4)">4</button>
+                <button onclick="addSymbol(5)">5</button>
+                <button onclick="addSymbol(6)">6</button>
+                <button class="operations" onclick="subtraction()">-</button><br>
+              </div>
+              <div>
+                <button onclick="addSymbol(1)">1</button>
+                <button onclick="addSymbol(2)">2</button>
+                <button onclick="addSymbol(3)">3</button>
+                <button class="operations" onclick="multiplication()">*</button><br>
+              </div>
+              <div>
+                <button onclick="addSymbol(0)">0</button>
+                <button onclick="addSymbol(`.`)">.</button>
+                <button onclick="equal()">=</button>
+                <button class="operations" onclick="division()">/</button><br>
+              </div>
+            </div>
+
+        </div>
+    
+    <button class="klik" onclick="clearDis()">(с)кажи (с)корая</button>
+    
+    <div class = "doggy">
+      <img src = "images/pes.png" width = "300">
+    </div>
+    
+    <div class = "kitty">
+      <img src = "images/whitestar.png" width = "300">
+    </div>
+   
+    
+  </main>
+ 
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+    
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
+
+
