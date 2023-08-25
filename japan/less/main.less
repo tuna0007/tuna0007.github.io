@@ -85,6 +85,7 @@ h2 {
 }
 
 
+
 .header {
     position: absolute;
     top: 0;
@@ -127,7 +128,6 @@ h2 {
         }
     }
 }
-
 
 
 .main-page {
@@ -189,7 +189,6 @@ h2 {
 }
 
 
-
 .benefits {
     margin-top: -140px;
     &-wrapper {
@@ -231,7 +230,6 @@ h2 {
         }  
     }  
 }
-
 
 
 .inspiration {
@@ -326,10 +324,7 @@ h2 {
         }
       }
     } 
-  }
-
-
-
+}
 
 
 .articles {
@@ -356,10 +351,8 @@ h2 {
             font-size: 16px;
             font-weight: 400;
         }
-    }
-        
+    }    
 }
-
 
 
 .top-places {
@@ -426,11 +419,8 @@ h2 {
             font-weight: 400;
             box-shadow: none;
         }
-
     }
-    
 }
-
 
 
 .video {
@@ -446,6 +436,7 @@ h2 {
         cursor: pointer;
     }
 }
+
 
 .footer {
     padding: 120px 0;
@@ -768,20 +759,33 @@ h2 {
 
     .articles {
         &-block {
+            margin: 120px 0;
+            &-txt {
+                width: 100%;
+                height: 100%;
+            }
             h3 {
-                font-size: 16px;
+                position: absolute;
+                top: -50px;
+                left: 0;
+                font-size: 18px;
+                color: @dark;
             }
             p {
                 font-size: 12px;
+                margin-top: auto;
             }
             button {
-                font-size: 10px;
-                img {
-                    width: 28px;
-                }
+                position: absolute;
+                bottom: -30px;
+                left: 0;
+                font-size: 12px;
             }
-            
-        }     
+        }       
+    }
+
+    .top-places {
+        margin: 40px 0;
     }
 
     .footer {
@@ -792,5 +796,26 @@ h2 {
         h6 {
             margin-top: 20px;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .benefits {
+        margin-top: 0px;
+        // &-wrapper {
+        //     padding: 100px;
+        //     text-align: left;
+        //     background-color: @light;
+        box-shadow: none;
+        //     color: @dark;
+        //     }  
+        // }  
+        &-wrapper {
+            box-shadow: none;
+        }
+    }
+
+    .inspiration {
+        margin: 80px 0;
     }
 }
