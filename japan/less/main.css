@@ -582,13 +582,17 @@ h2::after {
     display: none;
   }
   .articles-block h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .articles-block p {
     font-size: 14px;
   }
   .articles-block button {
     font-size: 12px;
+  }
+  .top-places h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
   }
   .top-places-card p {
     margin-top: 20px;
@@ -627,13 +631,13 @@ h2::after {
   }
   .articles-block h3 {
     position: absolute;
-    top: -50px;
+    top: -60px;
     left: 0;
-    font-size: 18px;
+    font-size: 24px;
     color: #102746;
   }
   .articles-block p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: auto;
   }
   .articles-block button {
