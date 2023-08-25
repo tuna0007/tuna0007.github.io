@@ -1,16 +1,33 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
 canvas {
   display: block;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
+
+a {
+  position: absolute;
+  top: 500px;
+  margin-right: 120px;
+  padding: 10px 20px;
+  display: inline-block;
+  min-width: 190px;
+  text-align: center;
+  color: white;
+  background-color: purple;
+  transition: .4s;
 }
-canvas {
-  display: block;
+a:hover {
+  color: purple;
+  background-color: white;
 }
+
+
+
+
+
+
+
+
+
