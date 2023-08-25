@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width">
+    <!--Required meta-->
+
+
+    <title>Japan</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link href="less/main.css" rel="stylesheet">
+
+    <!--JS-->
+    <!--если нужен загрузочный экран и тп, то сюда-->
+    <!-- Bootstrap JS + Popper JS -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xxl-6
+                  col-xl-6 
+                  col-lg-6
+                  col-md-3
+                  col-sm-6
+                  col-6">
+            <div class="header-logo">
+              <a href="#"><img src="images/logo.svg" alt="odigo" width="82px" height="31px"></a>
+            </div>
+          </div>
+
+          <div class="col-xxl-6
+                  col-xl-6 
+                  col-lg-6
+                  col-md-9
+                  col-sm-6
+                  col-6">
+            <div class="header-nav">
+              <ul class="header-nav-wrap" id="wrap">
+                <li class="header-nav-wrap-item"><a href="">Articles</a></li>
+                <li class="header-nav-wrap-item"><a href="">Locations</a></li>
+                <li class="header-nav-wrap-item"><a href="">Videos</a></li>
+                <li class="header-nav-wrap-item"><a href="">Sign In</a></li>
+              </ul>
+              <button class="btn-wrap" onclick="showMenu()">&#9776;</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    
+
+
+
+    <!-- MAIN -->
+    <main>
+      <section class="main-page">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xxl-12
+                    col-xl-612
+                    col-lg-12
+                    col-md-12
+                    col-sm-12
+                    col-12">
+              <h1>Discover Amazing places in Japan</h1>
+              <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <!-- Второй блок -->
+              <div class="dropdown-content">
+                <button class="dropdown-toggle city" onclick="showListWhere()">&#9675; &nbsp; Where would you like to go?</button>
+                <ul class="dropdown-content-options" id="where">
+                  <li class="dropdown-content-item" data-select="option" data-value="tokyo" onclick="showCity('Tokyo')">Tokyo</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="kyoto" onclick="showCity('Kyoto')">Kyoto</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="sapporo" onclick="showCity('Sapporo')">Sapporo</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="niigata" onclick="showCity('Niigata')">Niigata</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="dropdown-content">
+                <button class="dropdown-toggle activity" onclick="showListWhat()">&#9675; &nbsp; What would you like to do?</button>
+                <ul class="dropdown-content-options" id="what">
+                  <li class="dropdown-content-item" data-select="option" data-value="eat" onclick="showAct('To Eat')">To Eat</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="walk" onclick="showAct('To Walk')">To Walk</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="sleep" onclick="showAct('To Sleep')">To Sleep</li>
+                  <li class="dropdown-content-item" data-select="option" data-value="sightseeing" onclick="showAct('Sightseeing')">Sightseeing</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-12
+                    col-sm-12
+                    col-12">
+              <button class="btn-search">Search</button>
+            </div>
+          </div>
+            
+
+          
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="benefits-wrapper">
+                <h1>Benefits of Odigo</h1>
+                <div class="row">
+                  <div class="col-xxl-4
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                    <div class="benefits-wrapper-card">
+                      <img src="images/benefits/welcome.png" alt="welcome-icon" width="65px" height="65px">
+                      <h5>Welcome to Odigo!</h5>
+                      <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                      <button class="btn-more">Learn more <img src="images/icons/arrow.svg" alt="→" style="margin: 0 0 0 30px;"></button>
+                    </div>
+                  </div>
+
+                  <div class="col-xxl-4
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                    <div class="benefits-wrapper-card">
+                      <img src="images/benefits/guide.png" alt="guide-icon" width="65px" height="65px">
+                      <h5>Your Personal Japan Guide</h5>
+                      <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                      <button class="btn-more">Learn more <img src="images/icons/arrow.svg" alt="→" style="margin: 0 0 0 30px;"></button>
+                    </div>
+                  </div>
+
+                  <div class="col-xxl-4 
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                    <div class="benefits-wrapper-card" style="border: none;">
+                      <img src="images/benefits/promo.png" alt="promo-icon" width="65px" height="65px">
+                      <h5>Promoting Local Businesses</h5>
+                      <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
+                      <button class="btn-more">Learn more <img src="images/icons/arrow.svg" alt="→" style="margin: 0 0 0 30px;"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inspiration">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-sm-8">
+              <h2>Get inspired for your next trip</h2>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <button class="btn-more">View all <img src="images/icons/arrow.svg" alt="→"></button>
+            </div>
+          </div>
+          
+          <div class="inspiration-photo-block">
+            <div class="inspiration-photo-block-fuji">
+              <a href="#">
+                <h4>Mount Fuji</h4>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="inspiration-photo-block-kyoto"> 
+              <a href="">
+                <h4>Kyoto</h4>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="inspiration-photo-block-tokyo"> 
+              <a href="">
+                <h4>Tokyo</h4>
+                <div class="mask"></div>
+              </a>
+              
+            </div>
+            <div class="inspiration-photo-block-niigata"> 
+              <a href="">
+                <h4>Niigata</h4>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <div class="inspiration-photo-block-sapporo">
+              <a href="">
+                <h4>Sapporo</h4>
+                <div class="mask"></div>
+              </a> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="container">
+          <div class="articles-block">
+            <div class="row">
+              <div class="col-xxl-6
+                      col-xl-6 
+                      col-lg-6
+                      col-md-12
+                      col-sm-12
+                      col-12">
+                <img class="articles-img" src="images/articles/tottori.jpg" alt="Tottori">
+              </div>
+              <div class="col-xxl-6
+                      col-xl-6 
+                      col-lg-6
+                      col-md-12
+                      col-sm-12
+                      col-12">
+                <div class="articles-block-txt">
+                  <h3>Prefecture in Focus: Tottori</h3>
+                  <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+                  <button class="btn-more">View prefecture <img src="images/icons/arrow.svg" alt="→"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="articles-block">
+            <div class="row">
+              <div class="col-xxl-6
+                          col-xl-6 
+                          col-lg-6
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                <div class="articles-block-txt right">
+                  <h3>Featured Neighborhood: Kyoto’s Arashiyama</h3>
+                  <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+                  <button class="btn-more">View neighborhood <img src="images/icons/arrow.svg" alt="→"></button>
+                </div>
+              </div>
+
+              <div class="col-xxl-6
+                      col-xl-6 
+                      col-lg-6
+                      col-md-12
+                      col-sm-12
+                      col-12">
+                <img class="articles-img" src="images/articles/arashiyama.jpg" alt="Kyoto’s Arashiyama">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="top-places">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Today top places to visit</h2>
+            </div>
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/nagoya.jpg" alt="Nagoya">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Nagoya</h6></li>
+                      <li><span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li><span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/niigata.jpg" alt="Niigata">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Niigata</h6></li>
+                      <li>
+                        <span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li>
+                        <span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/osaka.jpg" alt="Osaka">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Osaka</h6></li>
+                      <li><span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li><span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/saitama.jpg" alt="Saitama">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Saitama</h6></li>
+                      <li><span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li><span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/ueno.jpg" alt="Ueno">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Ueno</h6></li>
+                      <li><span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li><span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-6
+                    col-sm-12
+                    col-12">
+              <div class="top-places-card">
+                <div class="top-places-card-heading">
+                  <img src="images/top-places/shibuya.jpg" alt="Shibuya">
+                  <div class="txt-block">
+                    <ul>
+                      <li><h6>Shibuya</h6></li>
+                      <li><span>221 <a href=""><img src="images/icons/like.svg" alt="❤"></a></span></li>
+                      <li><span>50 <a href=""><img src="images/icons/comment.svg" alt="☑"></a></span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+                <button class="btn-search">See more</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col-xxl-12
+                    col-xl-12 
+                    col-lg-12
+                    col-md-12
+                    col-sm-12
+                    col-12">
+              <img src="images/icons/play.svg" alt="►">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+ 
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-6
+                  col-xl-6 
+                  col-lg-6
+                  col-md-6
+                  col-sm-6
+                  col-6">
+            <img src="images/logo.svg" alt="Odigo">
+          </div>
+
+          <div class="col-xxl-6
+                  col-xl-6 
+                  col-lg-6
+                  col-md-12
+                  col-sm-12
+                  col-12">
+
+            <div class="row">
+
+              <div class="col-xxl-4
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                <ul>
+                  <li><h6>Company</h6></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xxl-4
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                <ul>
+                  <li><h6>Locations</h6></li>
+                  <li><a href="">Tokyo</a></li>
+                  <li><a href="">Kyoto</a></li>
+                  <li><a href="">Osaka</a></li>
+                  <li><a href="">Hokkaido</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xxl-4
+                          col-xl-4 
+                          col-lg-4
+                          col-md-12
+                          col-sm-12
+                          col-12">
+                <ul>
+                  <li><h6>Social Media</h6></li>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href="">Twitter</a></li>
+                  <li><a href="">Instagram</a></li>
+                  <li><a href="">YouTube</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
