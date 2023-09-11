@@ -4,10 +4,10 @@
 
 ________________________________________
 
-[Odigo Japan)](https://tuna0007.github.io/japan) - верстка по макету из Figma
+[Odigo Japan](https://tuna0007.github.io/japan) - верстка по макету из Figma
 
 ________________________________________
 
-[Russian classic](https://tuna0007.github.io/panelka/) - верстка по макету из Figma
+[Панельки](https://tuna0007.github.io/panelka/) - верстка по макету из Figma
 
 ________________________________________
