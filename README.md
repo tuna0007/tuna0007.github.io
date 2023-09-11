@@ -10,6 +10,6 @@ ________________________________________
 
 ________________________________________
 
-[Russian classic](tuna0007.github.io/panelka) 
+[Russian classic]((https://tuna0007.github.io/panelka/) 
 
 ________________________________________
