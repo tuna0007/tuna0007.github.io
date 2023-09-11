@@ -1,7 +1,5 @@
 # Websites
 
-________________________________________
-
 [Guest House Valentina (Figma)](https://tuna0007.github.io/guestHouse) 
 
 ________________________________________
