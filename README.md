@@ -5,6 +5,7 @@ The solar eclipse of October 25, 2022 brought into my life an understanding of w
 <img src="https://media.tenor.com/WetoplA2D2cAAAAC/orochi-onmyoji.gif" >
 </div>
 ________________________________________
+
 Currently, I'm creating websites for my portfolio, improving my knowledge of JS and searching for my first job as a developer.
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/238200426-29fd6286-4e7b-4d6c-818f-c4765d5e39a9.gif" width="80">
