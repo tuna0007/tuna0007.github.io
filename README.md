@@ -1,10 +1,7 @@
 # Hello, World! My name is Tanya
 
 The solar eclipse of October 25, 2022 brought into my life an understanding of what I want to do for the rest of my days.
-<div align="center">
 <img src="https://media.tenor.com/WetoplA2D2cAAAAC/orochi-onmyoji.gif" >
-</div>
-
 ________________________________________
 Currently, I'm creating websites for my portfolio, improving my knowledge of JS and searching for my first job as a developer.
 <div align="center">
