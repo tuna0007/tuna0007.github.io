@@ -1,13 +1,13 @@
 # Websites
 
-[Guest House Valentina (Figma)](https://tuna0007.github.io/guestHouse) 
+[Guest House Valentina](https://tuna0007.github.io/guestHouse) - верстка по макету из Figma
 
 ________________________________________
 
-[Odigo Japan (Figma)](https://tuna0007.github.io/japan) 
+[Odigo Japan)](https://tuna0007.github.io/japan) - верстка по макету из Figma
 
 ________________________________________
 
-[Russian classic](https://tuna0007.github.io/panelka/) 
+[Russian classic](https://tuna0007.github.io/panelka/) - верстка по макету из Figma
 
 ________________________________________
