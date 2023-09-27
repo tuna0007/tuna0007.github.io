@@ -205,8 +205,7 @@ $('.room-slider').slick({
           breakpoint: 530,
           settings: {
             slidesToShow: 1,
-            centerMode: true,
-            centerPadding: '16px',
+            centerMode: false,
           }
         }
     ]
