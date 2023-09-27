@@ -62,7 +62,7 @@ $('.feedback-area').slick({
 });
 
 /* INFO */ 
-$('.about-slider').slick({
+$('.slider').slick({
     prevArrow: '<button type="button" class="slick-next"><img src="images/icons/left.png" alt="arrow"></button>',
     nextArrow: '<button type="button" class="slick-prev"><img src="images/icons/right.png" alt="arrow"></button>',
     slidesToShow: 4,
@@ -110,7 +110,7 @@ $('.about-slider').slick({
           }
       ]
 });
-$('.about-slider-video').slick({
+$('.slider-video').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -159,55 +159,4 @@ $('.about-slider-video').slick({
       ]
 });
 
-
-/* ROOMS */
-$('.room-slider').slick({
-    prevArrow: '<button type="button" class="slick-next"><img src="images/icons/left.png" alt="arrow"></button>',
-    nextArrow: '<button type="button" class="slick-prev"><img src="images/icons/right.png" alt="arrow"></button>',
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    infinite: true,
-    centerMode: true,
-    centerPadding: '2px',
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-          centerMode: true,
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          centerMode: true,
-          centerPadding: '80px',
-        }
-      },
-      {
-          breakpoint: 993,
-          settings: {
-              slidesToShow: 2,
-              centerMode: true,
-              centerPadding: '0px',
-          }
-        },
-      {
-          breakpoint: 769,
-          settings: {
-              slidesToShow: 1,
-              centerMode: true,
-              centerPadding: '40px',
-          }
-        },
-        {
-          breakpoint: 530,
-          settings: {
-            slidesToShow: 1,
-            centerMode: false,
-          }
-        }
-    ]
-});
-});
+}); 
