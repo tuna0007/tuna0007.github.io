@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,width=device-width">
+    <!--Required meta-->
+
+
+    <title>Valentina Guest House</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="slick/slick.css">
+
+    <!-- Air Datepicker -->
+    <link rel="stylesheet" href="datepicker/air-datepicker.css">
+
+    <!--CSS-->
+    <link href="less/main.css" rel="stylesheet">
+
+    <!--JS-->
+    <!--если нужен загрузочный экран и тп, то сюда-->
+    <!-- Bootstrap JS + Popper JS -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+
+        <div class="header-contacts">
+          <div class="row">
+            <div class="col-xxl-5
+                    col-xl-5 
+                    col-lg-5
+                    col-md-4
+                    col-sm-6
+                    col-12">
+              <div class="header-contacts-address">
+                <p>Абхазия, Цандрыпш, ул. Октябрьская, д. 492</p>
+              </div>
+            </div>
+
+            <div class="col-xxl-3
+                    col-xl-3 
+                    col-lg-3
+                    col-md-4
+                    col-sm-6
+                    col-12">
+              <div class="header-contacts-email">
+                <p>booking@valentinahouse.ru</p>
+              </div>
+            </div>
+
+            <div class="col-xxl-4
+                    col-xl-4 
+                    col-lg-4
+                    col-md-4
+                    col-sm-12
+                    col-12">
+              <div class="header-contacts-phone">
+                <p>8 (862) 79-56-89</p>
+              </div>
+            </div>
+          </div> <!-- row -->
+        </div> <!-- header-contacts -->
+
+        <div class="header-nav">
+          <div class="row">
+            <div class="col-xxl-2
+                    col-xl-2
+                    col-lg-2
+                    col-md-6
+                    col-sm-6
+                    col-6">
+              <div class="header-nav-logo">
+                <a href="index.html">
+                  Valentina<br>
+                  Guest House
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-xxl-8
+                    col-xl-7
+                    col-lg-7
+                    col-md-6
+                    col-sm-6
+                    col-6">
+                 
+              <div class="header-nav-menu">
+                <button class="btn-wrap" onclick="showMenu()"><img src="images/icons/menu.svg" width="30px" height="30px"></button>   
+                <ul id="menuWrap" class="header-nav-menu-wrapper">
+                  <li><a href="index.html">Главная</a></li>
+                  <!-- dropdown -->
+                  <li class="header-nav-menu-wrapper-drop" >
+                    <a href="rooms.html">Номера и цены</a>
+                    <ul class="header-nav-menu-wrapper-drop-content">
+                      <li class="header-nav-menu-wrapper-drop-content-item"><a href="double.html">2-Х МЕСТНЫЙ</a></li>
+                      <li class="header-nav-menu-wrapper-drop-content-item"><a href="family-room.html">СЕМЕЙНЫЙ</a></li>
+                      <li class="header-nav-menu-wrapper-drop-content-item"><a href="deluxe.html">DELUXE</a></li>
+                      <li class="header-nav-menu-wrapper-drop-content-item"><a href="deluxeplus.html">DELUXE +</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="articles.html" active>Статьи</a></li>
+                  <li><a href="info.html">Информация</a></li>
+                  <li><a href="fullboard.html">Полный пансион</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xxl-2
+                    col-xl-3
+                    col-lg-3
+                    col-md-12
+                    col-sm-3
+                    col-3">
+              <div class="header-nav-media">
+                <ul>
+                  <li><a href="#"><img src="images/icons/contacts/blue/tg.png" width="24px" height="24px" alt="tg"></a></li>
+                  <li><a href="#"><img src="images/icons/contacts/blue/whatsapp.png" width="24px" height="24px" alt="whatsapp"></a></li>
+                  <li><a href="#"><img src="images/icons/contacts/blue/facebook.png" width="24px" height="24px" alt="facebook"></a></li>
+                  <li><a href="#"><img src="images/icons/contacts/blue/vk.png" width="24px" height="24px" alt="vk"></a></li>
+                  <li><a href="#"><img src="images/icons/contacts/blue/insta.png" width="24px" height="24px" alt="insta"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- row -->
+        </div> <!-- header-nav -->
+
+      </div> <!-- container -->
+    </header>
+
+    
+    
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="articles">
+            <div class="container">
+            
+              <div class="row">
+                
+                <div class="col-12">
+                  <h1>Статьи</h1>
+                </div>
+
+                <div class="col-xxl-6
+                            col-xl-6
+                            col-lg-6
+                            col-md-12
+                            col-sm-12
+                            col-12">
+                  <div class="row">
+              
+                    
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Случай</h5>
+                            <p>Дело было в 2016 году летом. Живу в Питере, уставший от мегаполиса и городской жизни, решил себя порадовать отпуском. Часа три гуглил куда лучше съездить, чтобы и душа-то отдохнула и по карману особо не било. А отдохнуть на море планировал ещё года 4, да так и не удавалось, то одна проблема, то другая. Остановил свой выбор на отдыхе в Абхазии, и вот нисколько не пожалел! Скучать мне там не пришлось уже в первый день. После перелёта, вымотанный и уставший я очень хотел поскорее приехать в отель, скинуть весь груз, помыться и взбодрить себя, чем ни будь тёмным, охлаждённым.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>Про отдых</h5>
+                            <p>В сезон отпусков многие выбирают, куда поехать на отдых. Основная группа людей, отдает предпочтение далеким южным странам. Однако некоторым туристам стоило бы присмотреться к Абхазии. Неотъемлемой частью летнего отпуска является отдых на море и в этой стране это обеспечено, поскольку многие отели в Абхазии располагаются на морском побережье. Чем заняться во время отдыха? В такой стране, как Абхазия каждый найдет занятие по душе. Любители природы могут насладиться обзором растений и животных, которые занесены в Красную книгу.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Бабье лето</h5>
+                            <p>На отдых в Абхазию стали ездить несколько лет назад. Отпуск выпадает каждый раз по-разному, поэтому мы уже были в этой замечательной стране летом и зимой, а вот теперь поехали осенью. Нашей семье нравится всесезонность — в любое время года мы обязательно находим занятие по душе. Прилетели в Адлер в конце сентября и сразу отправились в мини отель Абхазии «Гостевой дом Валентина». Гостиница понравилась — обстановка номера уютная, комфортная. Есть мебель, бытовая техника. На территории отеля детская площадка, сам двор ухоженный. На территории гостевого дома собственная кухня –удобно, если не...</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>Случай в столовой</h5>
+                            <p>Сразу оговорюсь, что случай, о котором пойдет речь это не просто история, а своего рода моя личная «исповедь». В ней нет ничего грустного или предосудительного – как я искренне полагаю сам – но произошедшее не выходит у меня из головы и потому я решил об этом написать. Все родственники и друзья слышали мой рассказ уже по многу раз, но как честному человеку мне этого оказалось мало и впервые я, можно сказать, предоставляю себя на «всеобщий суд».</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Мой первый день в Абхазии</h5>
+                            <p>Первый день на море.   Это случилось в Абхазии. Отдых на море – звучит романтично, отдых в Абхазии – даже экзотично и очень заманчиво, но когда это отдых в Абхазии с детьми, то сразу рушиться и романтика, и вся экзотика. Хотя у нас с женой всего один сорванец, но до того шустрый, что отойти от него нельзя ни на минуту, а тем более как раз когда он в таком возрасте, когда способен самостоятельно удовлетворить свое не дюжее любопытство, то есть может сам залезть «куда попало» и сделать «что хочет». Ему было на то время шесть лет.  </p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>На море</h5>
+                            <p>Тимуру 38 лет, живет в областном центре. Успел дважды жениться и дважды развестись: характер у него будто всегда пьяный — благая дурь так и прет. Добрейший человек, но очень независимый. А в прошлом году он сошелся с Варей, разведенной — так она сказала — с двумя детьми: Оля одиннадцати лет и Данила девяти, и сразу же решил завлечь новую семью в свой любимый bushkraft. Тем летом 10 дней провели в калужской тайге, на берегу речки, цементируя семейные отношения завершением маленькой «дачи» из сухостоя, которую он заложил еще пару лет назад.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-xxl-6
+                            col-xl-6
+                            col-lg-6
+                            col-md-12
+                            col-sm-12
+                            col-12">
+
+                  <div class="row hide-when-shrink">
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>Отдых зимой в Абхазии</h5>
+                            <p>Зима в Абхазии — потрясающее время года. Мы с мужем предпочли отправиться туда вместо традиционного отдыха на море. Основная цель поездки заключалась в посещении знаменитых новоафонских пещер и других достопримечательностей. Адлер встретил нас мягкой и теплой погодой – температура около 8 градусов, очень приятный климат. Транспортное сообщение развито отлично, поэтому здесь можно передвигаться из одного города в другой на общественном или арендованном транспорте, что очень удобно для туристов. За весь отдых в Абхазии температура воздуха не опускалась ниже...</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Дегустация вина</h5>
+                            <p>Мне очень давно хотелось рассказать об одном случае. Я конечно не из таких людей, жизнь которых полна приключений, о которых пишут романы или снимают фильмы, но история, которая со мной приключилась, как мне кажется, может представлять интерес для читателей, по крайней мере в нашем семейном кругу она имела большой успех. Рассказывают без смущения и стыда, потому что во первых такого больше с того времени со мной не повторялось, а во-вторых все закончилось хорошо.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>Новый год в Цандрыпше</h5>
+                            <p>Абхазия прекрасна в любой сезон, в любое время года ! Горы Кавказа и море придают ей особенный, неповторимый аромат, о чем восторженно написала стихи современная поэтесса О.Ахматшина: Чем пахнет Абхазия? — Солнцем горячим, Мёдом и сыром копченым в придачу, Гор вышиною, морскою волною, Пахнет душистой пицундской сосною… (Оксана Ахматшина, stihi.ru) Благодаря субтропическому климату здесь и зимой красуются экзотичные пальмы, зеленеют самшиты и дубы, цветут нарциссы и розы. В декабре в Абхазии убирают мандарины, которые без преувеличения можно назвать визитной карточкой этой... </p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Достопримечательности Абхазии</h5>
+                            <p>Как и в огромном числе российских семей, каждый летний сезон у нас с женой начинаются классические предотпускные баталии – куда ехать отдыхать и какой вид отдыха выбрать. Речь о том, что моя половинка, как любая девочка, хочет греться на песочке и плескаться в море, а я через 2 дня такого отдыха начинаю почти что лаять и кусаться. В итоге выбрали маленькую живописную Абхазию, в которой на небольшой территории есть и где полазить, и на чем полежать, и в чем искупаться. Море, пляж и богатейшая история – почему бы и нет? Итак, вот лишь то, что я один или с семьей успел посмотреть за несколько дней.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block blue">
+                            <h5>Как можно отдохнуть в Абхазии?</h5>
+                            <p>И хотя предлагает Абхазия отдых с детьми на берегу моря комфортный, приятный и тихий, но встречаются и такие семьи, которые привыкли к активному образу жизни. И даже дети не останавливают их в своем желании заниматься активным туризмом, наоборот, малыши с раннего возраста приучаются к такому времяпровождению. Являетесь любителем активного отдыха? Приезжайте в Абхазию!</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-12
+                                col-xl-12
+                                col-lg-12
+                                col-md-12
+                                col-sm-12
+                                col-12">
+                        <div class="articles-block orange">
+                            <h5>Новый год</h5>
+                            <p>Новый год-это самый добрый и светлый праздник. Он нам дарит прекрасную сказку и наполняет душу надеждой и теплом. Практически для любого человека этот знаменательный день характеризуется определенными признаками: ⦁ идеально сервированный стол с наличием самых вкусных и разнообразных блюд; ⦁ сказочно-неземная атмосфера, наполняющая сердца восторгом; ⦁ яркая сверкающая ёлочка-символ Нового года; ⦁ красочные фейерверки; ⦁ зимние холода.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                  
+
+                  </div>
+                </div>
+              </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+      
+    </main>
+ 
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <div class="row justify-content-center">
+
+            <div class="col-xxl-3
+                        col-xl-3
+                        col-lg-3">
+              <div class="footer-block-geo">
+                <h5>Геолокация</h5>
+                <div style="position:relative;overflow:hidden;">
+                  <iframe src="https://yandex.ru/map-widget/v1/?ll=40.034112%2C43.383429&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0NjI0MTU1NjAzElrQkNKn0YHQvdGLLCDQk9Cw0LPRgNCwINCw0YDQsNC40L7QvSwg0LDSm9GL0q3QsCDQkNC80LfQsNGA0LAsINCe0LrRgtC40LDQsdGAINC40LzSqdCwLCA0OTIiCg3vIiBCFaKILUI%2C&z=17" width="245" height="173" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-xxl-3
+                        col-xl-3
+                        col-lg-3
+                        col-md-6
+                        col-sm-6
+                        col-12">
+              <div class="footer-block-contacts">
+                <h5>Контакты</h5>
+                <ul>
+                  <li class="phone"><p>8 (862) 279-56-89</p></li>
+                  <li class="place"><p>Абхазия, Цандрыпш</p></li>
+                  <li class="address"><p>ул.Октябрьская, д.492</p></li>
+                  <li class="email"><p>booking@valentinahouse.ru</p></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-xxl-3
+                        col-xl-3
+                        col-lg-3
+                        col-md-6
+                        col-sm-6
+                        col-12">
+              <div class="footer-block-info">
+                <h5>Информация</h5>
+                <ul>
+                  <li>Заезд: с 16:00</li>
+                  <li>Выезд: до 12:00</li>
+                  <li>Бесплатный WI-FI</li>
+                  <li>Бесплатная парковка</li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Условия бронирования</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-xxl-3
+                        col-xl-3
+                        col-lg-3">
+              <div class="footer-block-weather">
+                <h5>Погода</h5>
+                <a style="display: block; position: relative; border: 0; padding: 0; margin: 0; text-decoration: none;" id="meteonova_inf_120_60_2_-215" href="//www.meteonova.ru/weather/-215-Tsandrypsh.htm" alt="Погода в Цандрыпше" title="Погода в Цандрыпше"></a>
+                <script type="text/javascript">
+                (function() {
+                  var script = document.createElement("script");
+                  script.src = "//www.meteonova.ru/informer/html/js/install.min.js";
+                  script.charset = "UTF-8";
+                  script.defer = true;
+                  script.onload = function() {
+                    new MeteonovaInf({
+                      type: "120_60_2",
+                      cities: ["-215"],
+                      scheme: {"border_radius":"0","box_shadow":"none","border_color":"#585858","background_color":"transparent","city_color":"#ffffff","main_color":"#ffffff","params_color":"#ffffff"}
+                    });
+                  };
+                  document.getElementsByTagName("head")[0].appendChild(script);
+                })();
+                </script>
+
+                <div class="footer-media">
+                  <ul>
+                    <li><a href="#"><img src="images/icons/contacts/white/tg.png" width="24px" height="24px" alt="tg"></a></li>
+                    <li><a href="#"><img src="images/icons/contacts/white/whatsapp.png" width="24px" height="24px" alt="whatsapp"></a></li>
+                    <li><a href="#"><img src="images/icons/contacts/white/facebook.png" width="24px" height="24px" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/icons/contacts/white/vk.png" width="24px" height="24px" alt="vk"></a></li>
+                    <li><a href="#"><img src="images/icons/contacts/white/insta.png" width="24px" height="24px" alt="insta"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center copyright">
+            <p>© 2015–2023 – VALENTINA GUEST HOUSE</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+
+    <!-- Dropdown -->
+    <script src="js/dropdown.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
