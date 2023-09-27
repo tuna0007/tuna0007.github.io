@@ -1,6 +1,6 @@
 # Websites
 
-[Guest House Valentina](https://tuna0007.github.io/guestHouse) - верстка по макету из Figma
+[Valentina Guest House](https://tuna0007.github.io/valentina) - верстка по макету из Figma
 
 ________________________________________
 
