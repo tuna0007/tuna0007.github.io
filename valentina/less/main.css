@@ -965,6 +965,7 @@ body {
   text-align: justify;
   font-size: 18px;
   font-weight: 400;
+  text-indent: 30px;
 }
 .about h6 {
   margin: 14px 0;
@@ -1006,16 +1007,6 @@ body {
   padding: 30px 70px;
   background-color: #fff;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
-}
-.about-slider-video .play {
-  position: absolute;
-  margin-left: 148px;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.about-slider-video .play:hover {
-  opacity: 0.9;
-  cursor: pointer;
 }
 .about-slider button {
   position: absolute;
@@ -1786,7 +1777,13 @@ body {
     margin: 10px auto 30px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 440px) {
+  .scale {
+    display: none;
+  }
+  .booking-info {
+    margin-top: 80px;
+  }
   .rooms-cards-item {
     flex-direction: column;
     box-shadow: none;
@@ -1818,29 +1815,22 @@ body {
     border-right: none;
     border-bottom: 1px solid #3F8CFF;
   }
-}
-@media (max-width: 440px) {
-  .scale {
-    display: none;
-  }
-  .booking-info {
-    margin-top: 80px;
-  }
-  .rooms .info-block h5 {
-    margin-top: 6px;
-    text-align: center;
-    font-size: 24px;
-  }
-  .rooms .info-block li {
-    font-size: 12px;
-    font-weight: 600;
-  }
   /* ARTICLES */
   .articles-block {
     min-height: 500px;
   }
   .articles-block p {
     margin-top: 30px;
+  }
+  /* INFO */
+  .about h3 {
+    width: 100%;
+  }
+  .about-slider {
+    padding: 30px 54px;
+  }
+  .about-slider-item {
+    margin: 0px;
   }
 }
 @media (max-width: 350px) {
