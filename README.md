@@ -1,4 +1,4 @@
-# Websites
+# Projects
 
 [Valentina Guest House](https://tuna0007.github.io/valentina) -многостраничный сайт, верстка по макету из Figma 
 
