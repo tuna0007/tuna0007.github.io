@@ -1019,6 +1019,9 @@ room pages and info page */
 .footer-block-contacts {
   line-height: 180.6%;
 }
+.footer-block-contacts a {
+  color: #fff;
+}
 .footer-block-contacts h5 {
   margin-left: 24px;
 }
